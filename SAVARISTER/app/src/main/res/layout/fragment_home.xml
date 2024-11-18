@@ -1,0 +1,356 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFEFE"
+    tools:context=".Ui.HomeFragment">
+
+    <!-- Customer Default Location -->
+
+    <!-- Search Bar -->
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/home" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="16dp"
+        android:text="76A eighth avenue, New York, US"
+        android:textColor="#C2C2C3"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_location"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:hint="Search food or restaurant here..."
+        android:textColor="#C2C2C3" />
+
+    <!-- Slideshow for Random Food Photos -->
+    <ViewFlipper
+        android:id="@+id/food_slider"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@id/et_search"
+        android:layout_marginTop="16dp"
+        android:autoStart="true"
+        android:flipInterval="3000"
+        android:inAnimation="@drawable/slide_in_right"
+        android:outAnimation="@drawable/slide_out_left">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/imagerounded"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pizza1" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/imagerounded"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/burger1" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/imagerounded"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/burger2" />
+    </ViewFlipper>
+
+    <!-- Category Section -->
+
+    <!-- Food Items Section -->
+
+    <!-- Bottom Navigation Bar -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/category_section"
+        android:layout_width="229dp"
+        android:layout_height="74dp"
+        android:layout_below="@id/food_slider"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="0dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="48dp"
+            android:layout_height="57dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.044"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.529" />
+
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#FEFEFE"
+            android:contentDescription="Pizza"
+            android:src="@drawable/pizzaicon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.042"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+
+            android:layout_width="55dp"
+            android:layout_height="18dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Pizza"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="Burger"
+            android:src="@drawable/burgericon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.407"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:layout_width="74dp"
+            android:layout_height="21dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Burger"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.406"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView13"
+            app:layout_constraintVertical_bias="0.615" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="47dp"
+            android:layout_height="56dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.423"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/food_items_container"
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:layout_below="@id/category_section"
+        android:layout_marginTop="3dp"
+        android:orientation="vertical">
+
+        <!-- Pizza Item -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="Pizza Image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pizza_photo" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Spicy Chicken Ranch"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Topped with fresh ingredients"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="$10.99"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-30dp"
+                    android:text="Buy Now" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Burger Item -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="176dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="Burger Image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/alsea_brands_burger_king_01" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Double WHOPPER®"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Served with fresh vegetables"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="$8.99"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-30dp"
+                    android:text="Buy Now" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cart" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Order History" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Fav Orders" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="309dp"
+        android:layout_marginBottom="551dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Categories"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="55dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/search" />
+
+    <Button
+        android:layout_marginTop="300dp"
+        android:id="@+id/button15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+</RelativeLayout>

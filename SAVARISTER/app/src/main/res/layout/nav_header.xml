@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    android:gravity="bottom"
+    android:padding="16dp"
+    android:background="@drawable/pngtree_corporate_company_promotion_ppt_background_poster_image_260405">
+
+    <ImageView
+        :srcCompat="@drawable/userrr"
+        android:layout_width="115dp"
+        android:layout_height="70dp"
+        android:src="@drawable/user" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="exaple@gmail.com"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp"/>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,198 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.HomeFragment">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="413dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="00dp"
+        app:srcCompat="@drawable/side_nav_bar" />
+
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="413dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="830dp"
+        app:srcCompat="@drawable/side_nav_bar" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="382dp"
+        android:layout_marginTop="70dp"
+        android:layout_height="60dp"
+        android:layout_gravity="top|start"
+        android:src="@drawable/savorista_logo__1_" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="86dp"
+        android:layout_height="85dp"
+        android:layout_gravity="top|start"
+        android:layout_marginTop="240dp"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/circled_user_male_skin_type_7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_gravity="top|start"
+        android:layout_marginTop="180dp"
+        android:layout_marginStart="23dp"
+        android:padding="1dp"
+        android:text="ᴀᴄᴄᴏᴜɴᴛ ɪɴꜰᴏ"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_marginTop="361dp"
+        android:layout_marginStart="92dp"
+        android:text="ᴜꜱᴇʀɴᴀᴍᴇ"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="394dp"
+        android:layout_marginEnd="300dp"
+        android:src="@drawable/username" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="210dp"
+        android:layout_height="46dp"
+        android:layout_gravity="top|start"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="89dp"
+        android:background="@drawable/textviewborder"
+        android:textSize="20dp"
+        android:text=""
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="387dp"
+        android:background="@drawable/textviewborder"
+        android:text=">"
+        android:textAlignment="viewEnd"
+        android:textColor="#bfbfbf"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_marginTop="465dp"
+        android:layout_marginStart="94dp"
+        android:text="ᴇᴍᴀɪʟ"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_gravity="top|start"
+        android:layout_marginTop="493dp"
+        android:layout_marginStart="38dp"
+        android:src="@drawable/email" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="210dp"
+        android:layout_height="46dp"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="503dp"
+        android:background="@drawable/textviewborder"
+        android:text=""
+        android:textSize="20dp"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="490dp"
+        android:background="@drawable/texttt2"
+        android:text=">"
+        android:textAlignment="viewEnd"
+        android:textColor="#bfbfbf"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="210dp"
+        android:layout_height="46dp"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="609dp"
+        android:background="@drawable/textviewborder"
+        android:text=""
+        android:textSize="20dp"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="596dp"
+        android:background="@drawable/textviewborder"
+        android:text=">"
+        android:textAlignment="viewEnd"
+        android:textColor="#bfbfbf"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="569.5dp"
+        android:text="ᴍᴏʙɪʟᴇ ɴᴜᴍʙᴇʀ"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="598dp"
+        app:srcCompat="@drawable/cell_phone" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="83dp"
+        android:layout_gravity="top|start"
+        android:layout_marginTop="240dp"
+        android:layout_marginStart="23dp"
+        android:background="@android:color/transparent"
+        />
+</FrameLayout>
